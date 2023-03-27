@@ -3,3 +3,24 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  padding-inline: 50px;
+  padding-top: 50px;
+  background: rgb(230, 154, 2);
+  background: radial-gradient(
+    circle,
+    rgba(230, 154, 2, 1) 30%,
+    rgba(237, 115, 125, 1) 100%
+  );
+}
+
+#container {
+  outline: 5px solid white;
+  height: 100vh;
+  margin-inline: auto;
+  max-width: 80%;
+  border-radius: 1%;
+  padding-top: 20px;
+  padding-left: 20px;
+}
