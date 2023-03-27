@@ -86,6 +86,7 @@ h1 {
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  column-gap: 15px;
 }
 
 h2 {
@@ -108,18 +109,17 @@ ul {
   line-height: 35px;
 }
 
-.skill {
-  /* display: inline; */
-}
-
-progress {
-  /* display: inline; */
-}
-
 .skills li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-size: 0.9rem;
+}
+
+.blog {
+  background-color: white;
+  border-radius: 12px;
+  height: fit-content;
+  padding: 15px;
 }
