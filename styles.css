@@ -7,20 +7,21 @@
 }
 
 body {
+  height: 100vh;
   font-family: "Montserrat", "system-ui";
-  color: #4f4f4f;
+  color: #828282;
   padding-inline: 50px;
   padding-top: 50px;
   background: rgb(230, 154, 2);
-  background: radial-gradient(
-    circle,
-    rgba(230, 154, 2, 1) 30%,
-    rgba(237, 115, 125, 1) 100%
+  background: linear-gradient(
+    to right bottom,
+    rgba(230, 154, 2, 1),
+    rgb(236, 27, 45)
   );
 }
 
 #container {
-  outline: 1px solid white;
+  /* outline: 1px solid white; */
   height: 100vh;
   margin-inline: auto;
   max-width: 950px;
@@ -49,6 +50,7 @@ header {
 h1 {
   font-size: larger;
   font-weight: 600;
+  color: #4f4f4f;
 }
 
 .details {
@@ -60,6 +62,7 @@ h1 {
 .details p {
   font-size: 0.9rem;
   line-height: 1.5;
+  color: #828282;
 }
 
 #content {
@@ -70,7 +73,7 @@ h1 {
 }
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+  font-variation-settings: "FILL" 2, "wght" 300, "GRAD" 0, "opsz" 24;
 }
 
 .email,
@@ -81,12 +84,13 @@ h1 {
 
 #main-grid {
   width: 100%;
-  outline: 5px solid red;
+  /* outline: 5px solid red; */
   height: 700px;
   margin-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 15px;
+  grid-template-columns: 1.5fr 2fr;
+  grid-auto-rows: 300px;
+  column-gap: 30px;
 }
 
 h2 {
@@ -94,6 +98,7 @@ h2 {
   padding-bottom: 10px;
   font-size: large;
   letter-spacing: 0.5px;
+  color: #4f4f4f;
 }
 
 .skills {
@@ -121,5 +126,88 @@ ul {
   background-color: white;
   border-radius: 12px;
   height: fit-content;
-  padding: 15px;
+  padding: 20px;
+  padding-right: 0;
+  grid-column: 2/3;
+}
+
+.faded {
+  font-weight: 500;
+  font-size: small;
+  color: rgba(182, 175, 175, 0.66);
+  padding-top: 15px;
+}
+
+.waddle {
+  height: auto;
+  width: 65%;
+  border-radius: 12px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 35px;
+}
+
+h3 {
+  max-width: 5ch;
+  font-size: 1.9rem;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+
+.blog-content {
+  padding-bottom: 15px;
+  padding-right: 35px;
+  font-size: 0.85rem;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rebeccapurple;
+}
+
+.hobbies {
+  background-color: white;
+  max-width: 100%;
+  border-radius: 12px;
+  height: fit-content;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  grid-column: 1/2;
+}
+
+.hobbies h3 {
+  color: #4f4f4f;
+  font-weight: 500;
+  font-size: 0.85rem;
+  max-width: 100ch;
+  padding-bottom: 10px;
+}
+
+.hobbies h2 {
+  padding-bottom: 0;
+}
+
+.hobby-img {
+  border-radius: 25px;
+  max-width: 100%;
+  width: auto;
+  height: fit-content;
+  padding-bottom: 10px;
+}
+
+.hobby-about {
+  font-size: 0.8rem;
+  padding-bottom: 20px;
 }
