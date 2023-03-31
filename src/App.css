@@ -95,9 +95,9 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 10px;
-  font-size: large;
+  font-size: larger;
   letter-spacing: 0.5px;
   color: #4f4f4f;
 }
@@ -297,9 +297,8 @@ a:visited {
 footer {
   width: 100%;
   text-align: center;
-  color: #a9a9a9;
-  color: red;
-  font-size: 0.8rem;
+  color: black;
+  font-size: 0.85rem;
   padding-top: 100px;
   padding-bottom: 15px;
   bottom: 0;
@@ -308,4 +307,13 @@ footer {
 .username {
   text-decoration: underline;
   font-weight: 600;
+}
+
+.project-cards {
+  grid-column: 1/3;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
 }
