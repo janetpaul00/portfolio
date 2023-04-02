@@ -33,7 +33,7 @@ function App() {
               <div className="contact">
                 <div className="email">
                   <span className="material-symbols-outlined"> mail </span>
-                  <p>muckba@gmail.com</p>
+                  <p>muckba@quackme.com</p>
                 </div>
                 <div className="phone">
                   <span className="material-symbols-outlined"> call </span>
@@ -159,25 +159,24 @@ function App() {
             <h2>Hobbies</h2>
             {[
               {
-                alt: "eggs snd butter",
+                alt: "eggs and butter",
                 image: baking,
                 title: "Baking",
                 description:
                   "Check out my sourdough and other recipes that use duck eggs in creative ways!",
               },
               {
-                alt: "eggs snd butter",
-                image: baking,
-                title: "Baking",
+                alt: "close up of a mic",
+                image: standup,
+                title: "Stand-up comedy",
                 description:
-                  "Check out my sourdough and other recipes that use duck eggs in creative ways!",
+                  "My take on the challenges of being a duck in this human centric world.",
               },
               {
-                alt: "eggs snd butter",
-                image: baking,
-                title: "Baking",
-                description:
-                  "Check out my sourdough and other recipes that use duck eggs in creative ways!",
+                alt: "duck flying under the clear blue sky",
+                image: skydiving,
+                title: "Skydiving",
+                description: "Come see my daring stunts during free-fall!",
               },
             ].map((hobby, index) => (
               <div className="hobby" key={index}>
@@ -192,34 +191,6 @@ function App() {
                 <p className="hobby-about">{hobby.description}</p>
               </div>
             ))}
-
-            <div className="hobby">
-              <img
-                className="hobby-img"
-                src={standup}
-                alt="closeup of a mic"
-                height="120"
-                width="400"
-              />
-              <h3>Stand-up comedy</h3>
-              <p className="hobby-about">
-                My take on the challenges of being a duck in this human centric
-                world.
-              </p>
-            </div>
-            <div className="hobby">
-              <img
-                className="hobby-img"
-                src={skydiving}
-                alt="duck flying under clear blue sky"
-                height="120"
-                width="400"
-              />
-              <h3>Skydiving</h3>
-              <p className="hobby-about">
-                Come see my daring stunts during free-fall!
-              </p>
-            </div>
           </div>
 
           <div className="experiences">
