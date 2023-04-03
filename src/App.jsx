@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./Footer";
 
 import { useState } from "react";
 
@@ -252,10 +253,7 @@ function App() {
           </div>
         </div>
       </main>
-      <footer>
-        created by <span className="username">janetpaul00</span> -
-        devChallenges.io
-      </footer>
+      <Footer />
     </div>
   );
 }
