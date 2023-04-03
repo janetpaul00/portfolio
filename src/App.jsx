@@ -1,9 +1,11 @@
 import "./App.css";
+import Header from "./Header";
 import Footer from "./Footer";
+import Skills from "./Skills";
+import Blog from "./Blog";
 
 import { useState } from "react";
 
-import Muckba from "./assets/Muckba.jpg";
 import waddle from "./assets/waddle.jpg";
 import baking from "./assets/baking.jpg";
 import standup from "./assets/standup.jpg";
@@ -17,145 +19,10 @@ function App() {
   return (
     <div id="container">
       <main>
-        <header id="intro">
-          <img
-            className="photo"
-            src={Muckba}
-            alt="Muckba, the hardcore duck"
-            height="300"
-            width="200"
-          />
-          <div id="content">
-            <div className="details">
-              <div id="headings">
-                <h1 className="name">Muckba Yanov</h1>
-                <p className="role">The hardcore duck</p>
-              </div>
-              <div className="contact">
-                <div className="email">
-                  <span className="material-symbols-outlined"> mail </span>
-                  <p>muckba@quackme.com</p>
-                </div>
-                <div className="phone">
-                  <span className="material-symbols-outlined"> call </span>
-                  <p>+(897) 50 1212 566</p>
-                </div>
-              </div>
-            </div>
-
-            <p className="about">
-              Muckba is a no-nonsense duck who's always up for a challenge.
-            </p>
-            <p className="about">
-              Whether she's waddling her way through an obstacle course or
-              engaging in a battle of wits with her feathered friends, Muckba
-              proves that when you're born to be a duck, you're born to be a
-              winner.
-            </p>
-            <br />
-          </div>
-        </header>
+        <Header />
         <div id="main-grid">
-          <div className="skills">
-            <h2>Skills</h2>
-            <ul>
-              <li>
-                <p className="skill">Waddle</p>
-                <progress
-                  value="98"
-                  max="100"
-                  style={{
-                    width: "60%",
-                    height: "25px",
-                  }}
-                />
-              </li>
-              <li>
-                <p className="skill">Diver</p>
-                <progress
-                  value="80"
-                  max="100"
-                  style={{
-                    width: "60%",
-                    height: "25px",
-                  }}
-                />
-              </li>
-              <li>
-                <p className="skill">Navigation</p>
-                <progress
-                  value="50"
-                  max="100"
-                  style={{
-                    width: "60%",
-                    height: "25px",
-                  }}
-                />
-              </li>
-              <li>
-                <p className="skill">Nest Building</p>
-                <progress
-                  value="60"
-                  max="100"
-                  style={{
-                    width: "60%",
-                    height: "25px",
-                  }}
-                />
-              </li>
-              <li>
-                <p className="skill">Quacking</p>
-                <progress
-                  value="80"
-                  max="100"
-                  style={{
-                    width: "60%",
-                    height: "25px",
-                  }}
-                />
-              </li>
-              <li>
-                <p className="skill">Duck Yoga</p>
-                <progress
-                  value="90"
-                  max="100"
-                  style={{
-                    width: "60%",
-                    height: "25px",
-                  }}
-                />
-              </li>
-            </ul>
-          </div>
-          <div className="blog">
-            <h2 className="faded">Blog</h2>
-            <div className="blog-container">
-              <h3>How to perfect your waddle</h3>
-              <img
-                className="waddle"
-                src={waddle}
-                alt="duckling learning to walk"
-                height="418"
-                width="330"
-              />
-            </div>
-            <p className="blog-intro">
-              Hello fellow ducks, today I want to talk about something that's
-              close to every duck's heart - our waddle.
-            </p>
-            <p className="blog-body">
-              As ducks, we all know how important it is to have a good waddle.
-              Not only is it an essential part of our movement and survival, but
-              it's also a way for us to express our individuality and
-              personality.
-            </p>
-            <a
-              href="https://www.youtube.com/watch?v=MHhFVxJOecY"
-              target="_blank"
-            >
-              see more
-            </a>
-          </div>
+          <Skills />
+          <Blog />
           <div className="hobbies">
             <h2>Hobbies</h2>
             {[
