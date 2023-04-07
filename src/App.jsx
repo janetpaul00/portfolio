@@ -6,7 +6,6 @@ import Blog from "./Blog";
 import Hobbies from "./Hobbies";
 import Experience from "./Exp";
 import Projects from "./Projects";
-import ProjectCards from "./ProjectCards";
 
 import { useState } from "react";
 
@@ -23,7 +22,6 @@ function App() {
           <Hobbies />
           <Experience />
           <Projects />
-          <ProjectCards />
         </div>
       </main>
       <Footer />
