@@ -1,14 +1,14 @@
-import wetlands from "src/assets/wetlands.jpg";
-import marine from "src/assets/marine.jpg";
-import forest from "src/assets/forest.jpg";
-import featherfriend from "src/assets/featherfriend.jpg";
-import waddlefeet from "src/assets/waddlefeet.jpg";
-import pond from "src/assets/pond.jpg";
-import story from "src/assets/story.jpg";
-import code from "src/assets/code.jpg";
-import study from "src/assets/study.jpg";
-import seal from "src/assets/seal.jpg";
-import dolphins from "src/assets/dolphins.jpg";
+import wetlands from "./assets/wetlands.jpg";
+import marine from "./assets/marine.jpg";
+import forest from "./assets/forest.jpg";
+import featherfriend from "./assets/featherfriend.jpg";
+import waddlefeet from "./assets/waddlefeet.jpg";
+import pond from "./assets/pond.jpg";
+import story from "./assets/story.jpg";
+import code from "./assets/code.jpg";
+import study from "./assets/study.jpg";
+import seal from "./assets/seal.jpg";
+import dolphins from "./assets/dolphins.jpg";
 
 export default function project_data() {
   const data = [
