@@ -1,11 +1,14 @@
 import { useState } from "react";
+import Cards from "./cards";
 import project_data from "./project-data";
 
 export default function Projects() {
   const [category, setCategory] = useState("nature");
 
   const data = project_data();
-  console.log(data);
+
+  let selected_data = data.filter((item) => item.category == category);
+  console.log(selected_data);
 
   return (
     <>
@@ -14,7 +17,7 @@ export default function Projects() {
         <ul className="project-type">
           <li>
             <button
-              className="project-buttons nature"
+              className="project buttons nature"
               onClick={() => setCategory("nature")}
             >
               Nature{" "}
@@ -22,7 +25,7 @@ export default function Projects() {
           </li>
           <li>
             <button
-              className="project-buttons education"
+              className="project buttons education"
               onClick={() => setCategory("education")}
             >
               Education{" "}
@@ -30,24 +33,21 @@ export default function Projects() {
           </li>
           <li>
             <button
-              className="project-buttons research"
+              className="project buttons research"
               onClick={() => setCategory("research")}
             >
               Research{" "}
             </button>
           </li>
         </ul>
+        <p>The current selection is {category}</p>
+        {selected_data.map((category, index) => (
+          <div key={index}>{category.header}</div>
+        ))}
       </div>
 
       <div className="project-cards">
-        <p>The current state is {category}</p>
-        <br />
-        {/* {data.filter((card) => card.category == category)} */}
-        {data.map((category, index) => (
-          <div className="card" key={index}>
-            {category.header}
-          </div>
-        ))}
+        <Cards details={selected_data} />
       </div>
     </>
   );
