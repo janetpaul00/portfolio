@@ -30,6 +30,14 @@ export default function project_data() {
     },
     {
       category: "nature",
+      image: waddlefeet,
+      hashtags: "#ClimateAction #SustainableLiving",
+      header: "Waddle for Change",
+      about:
+        "A charity event that involved a group of ducks waddling for miles to raise awareness about climate change.",
+    },
+    {
+      category: "nature",
       image: forest,
       hashtags: "#ForestRestoration #Biodiversity",
       header: "Forests for Future",
@@ -43,14 +51,6 @@ export default function project_data() {
       header: "Feathered Friends",
       about:
         "An initiative to promote co-existence between ducks and humans in urban areas.",
-    },
-    {
-      category: "nature",
-      image: waddlefeet,
-      hashtags: "#ClimateAction #SustainableLiving",
-      header: "Waddle for Change",
-      about:
-        "A charity event that involved a group of ducks waddling for miles to raise awareness about climate change.",
     },
     {
       category: "education",
@@ -78,19 +78,19 @@ export default function project_data() {
     },
     {
       category: "research",
+      image: seal,
+      hashtags: "#MarineMystery #SealAdventures",
+      header: "Secret Life of Seals",
+      about:
+        "Documenting the daily lives of seals and their interactions with other marine animals.",
+    },
+    {
+      category: "research",
       image: study,
       hashtags: "#PublicHealth #DataCollection",
       header: "Avian Influenza Study",
       about:
         "Conducted a study on avian influenza, collected data and developed prevention strategies.",
-    },
-    {
-      category: "research",
-      image: seal,
-      hashtags: "#MarineLifeMystery #UnderwaterAdventures",
-      header: "Secret Life of Seals",
-      about:
-        "Documenting the daily lives of seals and their interactions with other marine animals.",
     },
     {
       category: "research",

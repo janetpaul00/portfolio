@@ -14,7 +14,7 @@ export default function Header() {
         <div className="details">
           <div id="headings">
             <h1 className="name">Muckba Yanov</h1>
-            <p className="role">The hardcore duck</p>
+            <p className="role">Not your average duck</p>
           </div>
           <div className="contact">
             <div className="email">
@@ -29,12 +29,12 @@ export default function Header() {
         </div>
 
         <p className="about">
-          Muckba is a no-nonsense duck who's always up for a challenge.
+          Muckba is a more than a swim coach and an environmentalist.
         </p>
         <p className="about">
-          Whether she's waddling her way through an obstacle course or engaging
-          in a battle of wits with her feathered friends, Muckba proves that
-          when you're born to be a duck, you're born to be a winner.
+          When she's not perfecting her waddle or engaging in a battle of wits
+          with her feathered friends, Muckba proves that when you're born to be
+          a duck, you're born to be a winner.
         </p>
         <br />
       </div>

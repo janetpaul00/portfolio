@@ -46,7 +46,7 @@ export default function Experience() {
           <div className="exp-container">
             <div className="period">
               <time dateTime={role.datefrom}>{role.datefrom_text}</time> -
-              <time dateTime={role.dateto}>{role.datetotext}</time>
+              <time dateTime={role.dateto}> {role.datetotext}</time>
             </div>
             <div className="role">{role.title}</div>
             <div className="role-about">{role.about}</div>
