@@ -31,10 +31,8 @@ export default function Skills() {
       <h2>Skills</h2>
       <ul>
         {skills_data.map((skill, index) => (
-          <li>
-            <p className="skill" key={index}>
-              {skill.skill_name}
-            </p>
+          <li key={index}>
+            <p className="skill">{skill.skill_name}</p>
             <progress
               value={skill.value}
               max="100"

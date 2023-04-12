@@ -82,7 +82,7 @@ export default function project_data() {
       hashtags: "#PublicHealth #DataCollection",
       header: "Avian Influenza Study",
       about:
-        "Conducted a study on the prevalence of avian influenza, collected data and developed prevention strategies.",
+        "Conducted a study on avian influenza, collected data and developed prevention strategies.",
     },
     {
       category: "research",

@@ -3,12 +3,12 @@ import Cards from "./cards";
 import project_data from "./project-data";
 
 export default function Projects() {
-  const [category, setCategory] = useState("nature");
+  const [category, setCategory] = useState("research");
 
   const data = project_data();
 
   let selected_data = data.filter((item) => item.category == category);
-  console.log(selected_data);
+  console.log({ category });
 
   return (
     <>
@@ -17,7 +17,7 @@ export default function Projects() {
         <ul className="project-type">
           <li>
             <button
-              className="project buttons nature"
+              className="buttons nature"
               onClick={() => setCategory("nature")}
             >
               Nature{" "}
@@ -25,7 +25,7 @@ export default function Projects() {
           </li>
           <li>
             <button
-              className="project buttons education"
+              className="buttons education"
               onClick={() => setCategory("education")}
             >
               Education{" "}
@@ -33,14 +33,13 @@ export default function Projects() {
           </li>
           <li>
             <button
-              className="project buttons research"
+              className="buttons research"
               onClick={() => setCategory("research")}
             >
               Research{" "}
             </button>
           </li>
         </ul>
-        <p>The current selection is {category}</p>
         {selected_data.map((category, index) => (
           <div key={index}>{category.header}</div>
         ))}
@@ -48,6 +47,19 @@ export default function Projects() {
 
       <div className="project-cards">
         <Cards details={selected_data} />
+      </div>
+
+      <div className="project-pages">
+        <ol>
+          <li>
+            <span className="material-symbols-outlined">navigate_before</span>
+          </li>
+          <li>1</li>
+          <li className="page">2</li>
+          <li>
+            <span className="material-symbols-outlined">navigate_next</span>
+          </li>
+        </ol>
       </div>
     </>
   );
