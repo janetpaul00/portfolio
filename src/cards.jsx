@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function Cards({ details, page }) {
-  console.log(`length of details array: ${details.length}`);
+  // console.log(`length of details array: ${details.length}`);
 
   return (
     <>

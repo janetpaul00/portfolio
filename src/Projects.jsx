@@ -8,9 +8,7 @@ export default function Projects() {
   const data = project_data();
 
   let selected_data = data.filter((item) => item.category == category);
-  console.log({ category });
-
-  function handleNextClick() {}
+  // console.log({ category });
 
   const pages = Math.ceil(selected_data.length / 3);
 
@@ -24,7 +22,7 @@ export default function Projects() {
           {["Nature", "Education", "Research"].map((item) => (
             <li key={item}>
               <button
-                className="buttons"
+                className={`buttons ${item.toLowerCase()}`}
                 onClick={() => {
                   setCategory(item.toLowerCase());
                   setPage(0);
