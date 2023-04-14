@@ -88,7 +88,7 @@ h1 {
   /* height: 700px; */
   margin-top: 30px;
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
+  /* grid-template-columns: 1.5fr 2fr; */
   grid-template-rows: 300px 290px auto auto 400px;
   grid-auto-rows: auto;
   column-gap: 30px;
@@ -410,4 +410,11 @@ footer {
 
 .project-pages.disabled {
   display: none;
+}
+
+@media (width<700px) {
+  #main-grid {
+    grid-template-columns: 1fr;
+    justify-content: normal;
+  }
 }
