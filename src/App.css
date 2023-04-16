@@ -179,7 +179,7 @@ h3 {
   padding-bottom: 20px;
   padding-right: 35px;
   font-size: 0.85rem;
-  padding-bottom: 55px;
+  /* padding-bottom: 55px; */
 }
 
 a {
@@ -195,11 +195,11 @@ a:visited {
   background-color: white;
   max-width: 100%;
   border-radius: 12px;
-  height: 100%;
+  height: auto;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 20px;
   grid-area: hobbies;
 }
 
@@ -208,7 +208,7 @@ a:visited {
   font-weight: 500;
   font-size: 0.85rem;
   max-width: 100ch;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 .hobbies h2 {
@@ -298,7 +298,7 @@ a:visited {
   outline: inherit;
   color: #4f4f4f;
   font-size: 0.85rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 15px;
   padding-inline: 15px;
   padding-block: 1px;
@@ -307,11 +307,12 @@ a:visited {
 .buttons:hover {
   background-color: rgb(245, 92, 15);
   color: white;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .buttons.active {
   background-color: green;
+  color: white;
 }
 
 footer {
@@ -450,5 +451,10 @@ footer {
   .project-cards {
     row-gap: 30px;
     grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
+  #container {
+    padding-inline: 15px;
+    padding-top: 30px;
   }
 }
