@@ -31,7 +31,7 @@
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+- [Acknowledgements: Unsplash.com for all the photos](#acknowledgements)
 
 <!-- OVERVIEW -->
 
@@ -39,12 +39,9 @@
 
 ![screenshot](https://github.com/janetpaul00/portfolio/blob/166615cd1d409a7144db4840e0ef129323e4ef3a/Laptop-2-1167x800.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+The challenge was to create a portfolio website, so I created one for a Duck; it was more fun than I thought it would be. Copy written by ChatGPT.
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+I got to refresh a lot of my React knowledge via this project. I learnt about pagination and how to use React in a regular coding environment (as opposed to the platform I was learning it from).
 
 ### Built With
 
@@ -83,6 +80,8 @@ $ npm start
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
+- [Google Fonts] (https://fonts.google.com/)
+- [Unsplash] (https://unsplash.com/)
 
 ## Contact
 
