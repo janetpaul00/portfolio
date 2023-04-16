@@ -1,4 +1,5 @@
 import { useState } from "react";
+import clsx from "clsx";
 import Cards from "./cards";
 import project_data from "./project-data";
 
@@ -22,7 +23,10 @@ export default function Projects() {
           {["Nature", "Education", "Research"].map((item) => (
             <li key={item}>
               <button
-                className={`buttons ${item.toLowerCase()}`}
+                className={clsx(
+                  "buttons",
+                  category === item.toLowerCase() && "active"
+                )}
                 onClick={() => {
                   setCategory(item.toLowerCase());
                   setPage(0);

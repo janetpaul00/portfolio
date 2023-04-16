@@ -17,8 +17,7 @@ export default function project_data() {
       image: wetlands,
       hashtags: "#WetlandConservation",
       header: "World Wide Wetlands",
-      about:
-        "Muckba led a team to protect wetlands by lobbying policy-makers and promoting sustainable land use practices.",
+      about: "Muckba led a team to protect wetlands by lobbying policy-makers.",
     },
     {
       category: "nature",
@@ -26,7 +25,7 @@ export default function project_data() {
       hashtags: "#MarineConservation",
       header: "Save Our Seas",
       about:
-        "Muckba organized a community effort to remove pollutants from oceans, protecting marine habitats and wildlife.",
+        "Muckba organized a community effort to remove pollutants from oceans.",
     },
     {
       category: "nature",
@@ -42,7 +41,7 @@ export default function project_data() {
       hashtags: "#ForestRestoration #Biodiversity",
       header: "Forests for Future",
       about:
-        "Muckba spearheaded a project to restore degraded forest ecosystems by planting native trees and supporting sustainable forestry practices.",
+        "Muckba spearheaded a project to restore degraded forest ecosystems by planting native trees.",
     },
     {
       category: "nature",

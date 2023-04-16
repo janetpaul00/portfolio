@@ -7,8 +7,8 @@ export default function Header() {
         className="photo"
         src={Muckba}
         alt="Muckba, the hardcore duck"
-        height="300"
-        width="200"
+        height="3008"
+        width="2008"
       />
       <div id="content">
         <div className="details">
